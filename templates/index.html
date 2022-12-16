@@ -59,7 +59,7 @@
             align-items: center;
             width: 100%;
             height: 520px;
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("Gat1.jpg");
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('/static/image/Gat1.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -200,12 +200,12 @@
 
 <body>
     <header class="header">
-        <img src="global_logo.jpg" alt="logo">
+        <img src="{{url_for('static',filename='image/global_logo.jpg')}}" alt="logo">
         <a href="#" class="logo">GLOBAL ACADEMY OF TECHNOLOGY</a>
         <nav class="nav-items">
             <a href=" ">Home</a>
-            <a href="teacherlogin.html">TEACHER LOGIN</a>
-            <a href="studentlogin.html">STUDENT LOGIN</a>
+            <a href="/teacherlogin">TEACHER LOGIN</a>
+            <a href="/studentlogin">STUDENT LOGIN</a>
         </nav>
     </header>
     <main>
@@ -265,7 +265,7 @@
                     The Management, Principal and Staff of the institution believe in the overall development of the students and hence encourage them to participate in co-curricular, extra-curricular and sports events.</h4>
                     <a href="#" style="text-decoration: none; color: blue;">Know More .</a></p>
             </div>
-            <img src="Gat2.jfif" alt="">
+            <img src="{{url_for('static',filename='image/Gat2.jfif')}}" alt="pic">
         </div>
     </main>
     <footer class="footer">
